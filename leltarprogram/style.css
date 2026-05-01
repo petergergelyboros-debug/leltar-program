@@ -1,48 +1,47 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #1a1a2e; /* Sötét, modern háttér */
+    background-color: #0f172a; /* Az a szép sötétkék */
     color: white;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-header {
-    background: linear-gradient(135deg, #16213e, #0f3460);
-    padding: 20px;
+    width: 100%;
     text-align: center;
-    border-bottom: 3px solid #e94560;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    padding: 20px 0;
+    border-bottom: 2px solid #e11d48; /* A piros vonal a felirat alatt */
+    margin-bottom: 40px;
 }
 
 .clock-container {
-    font-family: 'Courier New', monospace;
-    font-size: 1.1rem;
-    color: #e94560;
+    color: #e11d48; /* Piros óra */
+    font-family: monospace;
     margin-bottom: 10px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    padding: 40px;
-    max-width: 1000px;
-    margin: auto;
+    gap: 20px;
+    width: 80%;
+    max-width: 900px;
 }
 
 .card {
-    background: #16213e;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    border: 1px solid #4e4e4e;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 1.2rem;
     cursor: pointer;
-    font-size: 1.3rem;
-    transition: 0.3s;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
 .card:hover {
-    background: #e94560;
-    transform: scale(1.05);
+    background-color: #334155;
+    transform: translateY(-5px);
 }
